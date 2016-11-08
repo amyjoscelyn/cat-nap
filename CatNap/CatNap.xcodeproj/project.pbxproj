@@ -15,6 +15,11 @@
 		3DD5CCEF1DD2626C00858766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCED1DD2626C00858766 /* Main.storyboard */; };
 		3DD5CCF11DD2626C00858766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCF01DD2626C00858766 /* Assets.xcassets */; };
 		3DD5CCF41DD2626C00858766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCF21DD2626C00858766 /* LaunchScreen.storyboard */; };
+		3DD5CD001DD2640500858766 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCFB1DD2640500858766 /* backgroundMusic.mp3 */; };
+		3DD5CD011DD2640500858766 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCFC1DD2640500858766 /* lose.mp3 */; };
+		3DD5CD021DD2640500858766 /* mrreow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCFD1DD2640500858766 /* mrreow.mp3 */; };
+		3DD5CD031DD2640500858766 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCFE1DD2640500858766 /* pop.mp3 */; };
+		3DD5CD041DD2640500858766 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCFF1DD2640500858766 /* win.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		3DD5CCF01DD2626C00858766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD5CCF31DD2626C00858766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DD5CCF51DD2626C00858766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD5CCFB1DD2640500858766 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		3DD5CCFC1DD2640500858766 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		3DD5CCFD1DD2640500858766 /* mrreow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mrreow.mp3; sourceTree = "<group>"; };
+		3DD5CCFE1DD2640500858766 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		3DD5CCFF1DD2640500858766 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +79,21 @@
 				3DD5CCF01DD2626C00858766 /* Assets.xcassets */,
 				3DD5CCF21DD2626C00858766 /* LaunchScreen.storyboard */,
 				3DD5CCF51DD2626C00858766 /* Info.plist */,
+				3DD5CD051DD2640B00858766 /* Sounds */,
 			);
 			path = CatNap;
+			sourceTree = "<group>";
+		};
+		3DD5CD051DD2640B00858766 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5CCFC1DD2640500858766 /* lose.mp3 */,
+				3DD5CCFD1DD2640500858766 /* mrreow.mp3 */,
+				3DD5CCFE1DD2640500858766 /* pop.mp3 */,
+				3DD5CCFF1DD2640500858766 /* win.mp3 */,
+				3DD5CCFB1DD2640500858766 /* backgroundMusic.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +158,12 @@
 			files = (
 				3DD5CCEF1DD2626C00858766 /* Main.storyboard in Resources */,
 				3DD5CCE61DD2626C00858766 /* GameScene.sks in Resources */,
+				3DD5CD001DD2640500858766 /* backgroundMusic.mp3 in Resources */,
+				3DD5CD031DD2640500858766 /* pop.mp3 in Resources */,
 				3DD5CCF11DD2626C00858766 /* Assets.xcassets in Resources */,
+				3DD5CD041DD2640500858766 /* win.mp3 in Resources */,
+				3DD5CD021DD2640500858766 /* mrreow.mp3 in Resources */,
+				3DD5CD011DD2640500858766 /* lose.mp3 in Resources */,
 				3DD5CCF41DD2626C00858766 /* LaunchScreen.storyboard in Resources */,
 				3DD5CCE81DD2626C00858766 /* Actions.sks in Resources */,
 			);
