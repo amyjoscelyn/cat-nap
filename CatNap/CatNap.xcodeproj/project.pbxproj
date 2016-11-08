@@ -21,6 +21,8 @@
 		3DD5CD031DD2640500858766 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCFE1DD2640500858766 /* pop.mp3 */; };
 		3DD5CD041DD2640500858766 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCFF1DD2640500858766 /* win.mp3 */; };
 		3DD5CD081DD2679600858766 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CD071DD2679600858766 /* Cat.sks */; };
+		3DD5CD0A1DD26DFA00858766 /* CatCurls.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CD091DD26DFA00858766 /* CatCurls.sks */; };
+		3DD5CD0C1DD26E8B00858766 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CD0B1DD26E8B00858766 /* CatWakeUp.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		3DD5CCFE1DD2640500858766 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
 		3DD5CCFF1DD2640500858766 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
 		3DD5CD071DD2679600858766 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
+		3DD5CD091DD26DFA00858766 /* CatCurls.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurls.sks; sourceTree = "<group>"; };
+		3DD5CD0B1DD26E8B00858766 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 			children = (
 				3DD5CCE51DD2626C00858766 /* GameScene.sks */,
 				3DD5CD071DD2679600858766 /* Cat.sks */,
+				3DD5CD091DD26DFA00858766 /* CatCurls.sks */,
+				3DD5CD0B1DD26E8B00858766 /* CatWakeUp.sks */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -171,6 +177,8 @@
 				3DD5CCE61DD2626C00858766 /* GameScene.sks in Resources */,
 				3DD5CD001DD2640500858766 /* backgroundMusic.mp3 in Resources */,
 				3DD5CD031DD2640500858766 /* pop.mp3 in Resources */,
+				3DD5CD0C1DD26E8B00858766 /* CatWakeUp.sks in Resources */,
+				3DD5CD0A1DD26DFA00858766 /* CatCurls.sks in Resources */,
 				3DD5CCF11DD2626C00858766 /* Assets.xcassets in Resources */,
 				3DD5CD041DD2640500858766 /* win.mp3 in Resources */,
 				3DD5CD021DD2640500858766 /* mrreow.mp3 in Resources */,
