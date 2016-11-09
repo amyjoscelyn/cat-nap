@@ -15,6 +15,7 @@ struct PhysicsCategory
     static let Cat:     UInt32 = 0b1 // 1 in binary
     static let Block:   UInt32 = 0b10 // 2
     static let Bed:     UInt32 = 0b100 // 4
+    static let Edge:    UInt32 = 0b1000 // 8
 }
 
 protocol EventListenerNode
@@ -27,7 +28,7 @@ protocol InteractiveNode
     func interact()
 }
 
-class GameScene: SKScene
+class GameScene: SKScene, SKPhysicsContactDelegate
 {
     var bedNode: BedNode!
     var catNode: CatNode!
@@ -43,6 +44,8 @@ class GameScene: SKScene
         let playableRect = CGRect(x: 0, y: playableMargin, width: size.width, height: size.height - playableMargin * 2)
         
         physicsBody = SKPhysicsBody(edgeLoopFrom: playableRect)
+        physicsWorld.contactDelegate = self
+        physicsBody!.categoryBitMask = PhysicsCategory.Edge
         
         enumerateChildNodes(withName: "//*", using: { node, _ in
             if let eventListenerNode = node as? EventListenerNode
@@ -59,5 +62,19 @@ class GameScene: SKScene
         
         SKTAudio.sharedInstance()
         .playBackgroundMusic("backgroundMusic.mp3")
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact)
+    {
+        let collision = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
+        
+        if collision == PhysicsCategory.Cat | PhysicsCategory.Bed
+        {
+            print("SUCCESS")
+        }
+        else if collision == PhysicsCategory.Cat | PhysicsCategory.Edge
+        {
+            print("FAIL")
+        }
     }
 }
