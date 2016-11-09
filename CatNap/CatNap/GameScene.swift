@@ -43,5 +43,8 @@ class GameScene: SKScene
         
 //        bedNode.setScale(1.5)
 //        catNode.setScale(1.5)
+        
+        SKTAudio.sharedInstance()
+        .playBackgroundMusic("backgroundMusic.mp3")
     }
 }
