@@ -37,6 +37,7 @@
 		3DD5CD271DD3BD4800858766 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CD1B1DD3BD4800858766 /* SKTEffects.swift */; };
 		3DD5CD281DD3BD4800858766 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CD1C1DD3BD4800858766 /* SKTTimingFunctions.swift */; };
 		3DD5CD291DD3BD4800858766 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CD1D1DD3BD4800858766 /* Vector3.swift */; };
+		3DD5CD2B1DD3D32F00858766 /* BlockNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CD2A1DD3D32F00858766 /* BlockNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		3DD5CD1B1DD3BD4800858766 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
 		3DD5CD1C1DD3BD4800858766 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
 		3DD5CD1D1DD3BD4800858766 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		3DD5CD2A1DD3D32F00858766 /* BlockNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				3DD5CCE91DD2626C00858766 /* GameScene.swift */,
 				3DD5CD0D1DD37C4C00858766 /* BedNode.swift */,
 				3DD5CD0F1DD3B67100858766 /* CatNode.swift */,
+				3DD5CD2A1DD3D32F00858766 /* BlockNode.swift */,
 				3DD5CCEB1DD2626C00858766 /* GameViewController.swift */,
 				3DD5CCED1DD2626C00858766 /* Main.storyboard */,
 				3DD5CCF01DD2626C00858766 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 				3DD5CD281DD3BD4800858766 /* SKTTimingFunctions.swift in Sources */,
 				3DD5CD231DD3BD4800858766 /* SKAction+SpecialEffects.swift in Sources */,
 				3DD5CD211DD3BD4800858766 /* Int+Extensions.swift in Sources */,
+				3DD5CD2B1DD3D32F00858766 /* BlockNode.swift in Sources */,
 				3DD5CD291DD3BD4800858766 /* Vector3.swift in Sources */,
 				3DD5CD0E1DD37C4C00858766 /* BedNode.swift in Sources */,
 				3DD5CD241DD3BD4800858766 /* SKColor+Extensions.swift in Sources */,
