@@ -34,6 +34,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var bedNode: BedNode!
     var catNode: CatNode!
     var playable = true
+    var currentLevel: Int = 0
+    
+    class func level(levelNum: Int) -> GameScene?
+    {
+        let scene = GameScene(fileNamed: "Level\(levelNum)")
+        scene?.currentLevel = levelNum
+        scene?.scaleMode = .aspectFill
+        return scene
+    }
     
     override func didMove(to view: SKView)
     {
@@ -62,15 +71,24 @@ class GameScene: SKScene, SKPhysicsContactDelegate
 //        bedNode.setScale(1.5)
 //        catNode.setScale(1.5)
         
+        /* COMMENTED OUT FOR NOW
         SKTAudio.sharedInstance()
-        .playBackgroundMusic("backgroundMusic.mp3")
+        .playBackgroundMusic("backgroundMusic.mp3")*/
     }
     
     func didBegin(_ contact: SKPhysicsContact)
     {
-        if !playable { return }
-        
         let collision = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
+        
+        if collision == PhysicsCategory.Label | PhysicsCategory.Edge
+        {
+            let labelNode = contact.bodyA.categoryBitMask == PhysicsCategory.Label ? contact.bodyA.node : contact.bodyB.node
+            
+            let message = labelNode as! MessageNode
+            message.didBounce()
+        }
+        
+        if !playable { return }
         
         if collision == PhysicsCategory.Cat | PhysicsCategory.Bed
         {
@@ -93,9 +111,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     func newGame()
     {
-        let scene = GameScene(fileNamed: "GameScene")
-        scene!.scaleMode = scaleMode
-        view!.presentScene(scene)
+        view!.presentScene(GameScene.level(levelNum: currentLevel))
     }
     
     func lose()
@@ -124,5 +140,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         perform(#selector(GameScene.newGame), with: nil, afterDelay: 3)
         
         catNode.curlAt(scenePoint: bedNode.position)
+    }
+    
+    override func didSimulatePhysics()
+    {
+        if playable
+        {
+            if fabs(catNode.parent!.zRotation) > CGFloat(25).degreesToRadians()
+            {
+                lose()
+            }
+        }
     }
 }
