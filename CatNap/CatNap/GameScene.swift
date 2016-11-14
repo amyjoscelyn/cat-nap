@@ -83,6 +83,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         
         hookBaseNode = childNode(withName: "hookBase") as? HookBaseNode
         print("childNodeWithName: \(childNode(withName: "hookBase"))")
+        
+        /* handled with checked "pinned" box in scenekit editor
+        if let
+            seesawNode = childNode(withName: "seesaw")
+        {
+            if let seesawBaseNode = childNode(withName: "seesawBase")
+            {
+                let seesawJoint = SKPhysicsJointPin.joint(withBodyA: seesawBaseNode.physicsBody!, bodyB: seesawNode.physicsBody!, anchor: seesawBaseNode.position)
+                physicsWorld.add(seesawJoint)
+            }
+        } */
     }
     
     func didBegin(_ contact: SKPhysicsContact)
@@ -130,6 +141,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     func lose()
     {
+        if currentLevel > 1
+        {
+            currentLevel -= 1
+        }
+        
         playable = false
         
         SKTAudio.sharedInstance().pauseBackgroundMusic()
@@ -144,6 +160,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     
     func win()
     {
+        if currentLevel < 6
+        {
+            currentLevel += 1
+        }
+        
         playable = false
         
         SKTAudio.sharedInstance().pauseBackgroundMusic()
