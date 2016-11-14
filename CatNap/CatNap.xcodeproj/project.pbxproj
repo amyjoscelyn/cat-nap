@@ -50,6 +50,7 @@
 		3DF13C121DDA57C200614090 /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3DF13C101DDA57C200614090 /* Level5.sks */; };
 		3DF13C131DDA57C200614090 /* Level6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3DF13C111DDA57C200614090 /* Level6.sks */; };
 		3DF13C151DDA716000614090 /* PictureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF13C141DDA716000614090 /* PictureNode.swift */; };
+		3DF13C171DDA752900614090 /* DiscoBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF13C161DDA752900614090 /* DiscoBallNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		3DF13C101DDA57C200614090 /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level5.sks; sourceTree = "<group>"; };
 		3DF13C111DDA57C200614090 /* Level6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level6.sks; sourceTree = "<group>"; };
 		3DF13C141DDA716000614090 /* PictureNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureNode.swift; sourceTree = "<group>"; };
+		3DF13C161DDA752900614090 /* DiscoBallNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoBallNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				3D4B467A1DD669C500B67924 /* HookBaseNode.swift */,
 				3DF13BFD1DDA356E00614090 /* StoneNode.swift */,
 				3DF13C141DDA716000614090 /* PictureNode.swift */,
+				3DF13C161DDA752900614090 /* DiscoBallNode.swift */,
 				3DD5CD2C1DD3D85B00858766 /* MessageNode.swift */,
 				3DD5CCEB1DD2626C00858766 /* GameViewController.swift */,
 				3DD5CCED1DD2626C00858766 /* Main.storyboard */,
@@ -310,6 +313,7 @@
 				3DD5CD251DD3BD4800858766 /* SKNode+Extensions.swift in Sources */,
 				3DD5CD101DD3B67100858766 /* CatNode.swift in Sources */,
 				3DF13BFE1DDA356E00614090 /* StoneNode.swift in Sources */,
+				3DF13C171DDA752900614090 /* DiscoBallNode.swift in Sources */,
 				3DD5CD281DD3BD4800858766 /* SKTTimingFunctions.swift in Sources */,
 				3DD5CD231DD3BD4800858766 /* SKAction+SpecialEffects.swift in Sources */,
 				3DD5CD211DD3BD4800858766 /* Int+Extensions.swift in Sources */,
