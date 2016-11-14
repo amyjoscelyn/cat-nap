@@ -1,18 +1,18 @@
 //
-//  BlockNode.swift
+//  SpringNode.swift
 //  CatNap
 //
-//  Created by Amy Joscelyn on 11/9/16.
+//  Created by Amy Joscelyn on 11/11/16.
 //  Copyright © 2016 Amy Joscelyn. All rights reserved.
 //
 
 import SpriteKit
 
-class BlockNode: SKSpriteNode, EventListenerNode, InteractiveNode
+class SpringNode: SKSpriteNode, EventListenerNode, InteractiveNode
 {
     func didMoveToScene()
     {
-        print("block added to scene")
+        print("spring added to scene")
         
         isUserInteractionEnabled = true
     }
@@ -21,9 +21,10 @@ class BlockNode: SKSpriteNode, EventListenerNode, InteractiveNode
     {
         isUserInteractionEnabled = false
         
+        physicsBody!.applyImpulse(CGVector(dx: 0, dy: 250), at: CGPoint(x: size.width / 2, y: size.height))
+        
         run(SKAction.sequence([
-            SKAction.playSoundFileNamed("pop.mp3", waitForCompletion: false),
-            SKAction.scale(to: 0.8, duration: 0.1),
+            SKAction.wait(forDuration: 1),
             SKAction.removeFromParent()
             ]))
     }
@@ -31,7 +32,6 @@ class BlockNode: SKSpriteNode, EventListenerNode, InteractiveNode
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         super.touchesEnded(touches, with: event)
-        print("destroy block")
         interact()
     }
 }

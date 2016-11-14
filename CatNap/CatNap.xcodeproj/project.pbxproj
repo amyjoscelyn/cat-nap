@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4B46771DD663A900B67924 /* SpringNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B46761DD663A900B67924 /* SpringNode.swift */; };
+		3D4B467B1DD669C500B67924 /* HookBaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B467A1DD669C500B67924 /* HookBaseNode.swift */; };
+		3D4B467D1DDA2A3200B67924 /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3D4B467C1DDA2A3200B67924 /* Level3.sks */; };
 		3D591C8C1DD660F500921EA1 /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3D591C8B1DD660F500921EA1 /* Level2.sks */; };
 		3DD5CCE41DD2626C00858766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD5CCE31DD2626C00858766 /* AppDelegate.swift */; };
 		3DD5CCE61DD2626C00858766 /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5CCE51DD2626C00858766 /* Level1.sks */; };
@@ -43,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D4B46761DD663A900B67924 /* SpringNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringNode.swift; sourceTree = "<group>"; };
+		3D4B467A1DD669C500B67924 /* HookBaseNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HookBaseNode.swift; sourceTree = "<group>"; };
+		3D4B467C1DDA2A3200B67924 /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level3.sks; sourceTree = "<group>"; };
 		3D591C8B1DD660F500921EA1 /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
 		3DD5CCE01DD2626C00858766 /* CatNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD5CCE31DD2626C00858766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,8 @@
 				3DD5CD0D1DD37C4C00858766 /* BedNode.swift */,
 				3DD5CD0F1DD3B67100858766 /* CatNode.swift */,
 				3DD5CD2A1DD3D32F00858766 /* BlockNode.swift */,
+				3D4B46761DD663A900B67924 /* SpringNode.swift */,
+				3D4B467A1DD669C500B67924 /* HookBaseNode.swift */,
 				3DD5CD2C1DD3D85B00858766 /* MessageNode.swift */,
 				3DD5CCEB1DD2626C00858766 /* GameViewController.swift */,
 				3DD5CCED1DD2626C00858766 /* Main.storyboard */,
@@ -146,6 +154,7 @@
 			children = (
 				3DD5CCE51DD2626C00858766 /* Level1.sks */,
 				3D591C8B1DD660F500921EA1 /* Level2.sks */,
+				3D4B467C1DDA2A3200B67924 /* Level3.sks */,
 				3DD5CD071DD2679600858766 /* Cat.sks */,
 				3DD5CD091DD26DFA00858766 /* CatCurls.sks */,
 				3DD5CD0B1DD26E8B00858766 /* CatWakeUp.sks */,
@@ -242,6 +251,7 @@
 				3DD5CD0A1DD26DFA00858766 /* CatCurls.sks in Resources */,
 				3DD5CCF11DD2626C00858766 /* Assets.xcassets in Resources */,
 				3DD5CD041DD2640500858766 /* win.mp3 in Resources */,
+				3D4B467D1DDA2A3200B67924 /* Level3.sks in Resources */,
 				3DD5CD021DD2640500858766 /* mrreow.mp3 in Resources */,
 				3DD5CD011DD2640500858766 /* lose.mp3 in Resources */,
 				3DD5CCF41DD2626C00858766 /* LaunchScreen.storyboard in Resources */,
@@ -273,6 +283,8 @@
 				3DD5CD241DD3BD4800858766 /* SKColor+Extensions.swift in Sources */,
 				3DD5CD201DD3BD4800858766 /* CGVector+Extensions.swift in Sources */,
 				3DD5CCEC1DD2626C00858766 /* GameViewController.swift in Sources */,
+				3D4B467B1DD669C500B67924 /* HookBaseNode.swift in Sources */,
+				3D4B46771DD663A900B67924 /* SpringNode.swift in Sources */,
 				3DD5CD261DD3BD4800858766 /* SKTAudio.swift in Sources */,
 				3DD5CD1E1DD3BD4800858766 /* CGFloat+Extensions.swift in Sources */,
 				3DD5CCE41DD2626C00858766 /* AppDelegate.swift in Sources */,
