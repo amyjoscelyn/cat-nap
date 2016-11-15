@@ -16,9 +16,32 @@ class DiscoBallNode: SKSpriteNode, EventListenerNode, InteractiveNode
     private var isDiscoTime: Bool = false {
         didSet {
             video.isHidden = !isDiscoTime
-            ///up to here
+            
+            if isDiscoTime
+            {
+                video.play()
+                run(spinAction)
+            }
+            else
+            {
+                video.pause()
+                removeAllActions()
+            }
+            
+            SKTAudio.sharedInstance().playBackgroundMusic(isDiscoTime ? "disco-sound.m4a" : "backgroundMusic.mp3")
+            
+            if isDiscoTime
+            {
+                video.run(SKAction.wait(forDuration: 5.0), completion: {
+                    self.isDiscoTime = false
+                })
+            }
+            
+            DiscoBallNode.isDiscoTime = isDiscoTime
         }
     }
+    static private(set) var isDiscoTime = false
+    
     private let spinAction = SKAction.repeatForever(
         SKAction.animate(with: [
             SKTexture(imageNamed: "discoball1"),
